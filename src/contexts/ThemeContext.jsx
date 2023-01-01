@@ -3,7 +3,7 @@ import { ThemeProvider } from 'styled-components';
 
 export const ThemeContext = createContext(null);
 
-export const ThemeContextProvider = () => {
+export const ThemeContextProvider = ({ children }) => {
   const [lightMode, setLightMode] = useState(false);
 
   const darkTheme = {
@@ -41,7 +41,9 @@ export const ThemeContextProvider = () => {
 
   return (
     <ThemeContext.Provider value={{ changeTheme, lightMode }}>
-      <ThemeProvider theme={lightMode ? lightTheme : darkTheme}></ThemeProvider>
+      <ThemeProvider theme={lightMode ? lightTheme : darkTheme}>
+        {children}
+      </ThemeProvider>
     </ThemeContext.Provider>
   );
 };
