@@ -3,7 +3,7 @@ import { ThemeProvider } from 'styled-components';
 
 export const ThemeContext = createContext(null);
 
-const ThemeContextProvider = () => {
+export const ThemeContextProvider = () => {
   const [lightMode, setLightMode] = useState(false);
 
   const darkTheme = {
@@ -45,5 +45,3 @@ const ThemeContextProvider = () => {
     </ThemeContext.Provider>
   );
 };
-
-export default ThemeContextProvider;

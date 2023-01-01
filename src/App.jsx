@@ -1,10 +1,13 @@
 import styled from 'styled-components';
-import ThemeContextProvider from './contexts/ThemeContext';
+import { ThemeContextProvider } from './contexts/ThemeContext';
+import { TopArea } from './components/TopArea';
 
 const App = () => {
   return (
     <ThemeContextProvider>
-      <Container></Container>
+      <Container>
+        <TopArea />
+      </Container>
     </ThemeContextProvider>
   );
 };
