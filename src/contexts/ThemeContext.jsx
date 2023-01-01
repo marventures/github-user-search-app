@@ -40,7 +40,7 @@ const ThemeContextProvider = () => {
   }, []);
 
   return (
-    <ThemeContext.Provider value={{ changeTheme, lightTheme, darkTheme }}>
+    <ThemeContext.Provider value={{ changeTheme, lightMode }}>
       <ThemeProvider theme={lightMode ? lightTheme : darkTheme}></ThemeProvider>
     </ThemeContext.Provider>
   );
