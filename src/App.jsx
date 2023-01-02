@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { ThemeContextProvider } from './contexts/ThemeContext';
 import { TopArea } from './components/TopArea';
 import { useState } from 'react';
+import { Index } from './components/UserData/Index';
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -14,6 +15,7 @@ const App = () => {
     <ThemeContextProvider>
       <Container>
         <TopArea setUser={setUserData} />
+        {user && <Index user={user} />}
       </Container>
     </ThemeContextProvider>
   );
