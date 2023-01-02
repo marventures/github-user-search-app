@@ -1,7 +1,5 @@
 import React from 'react';
 
-const LinksArea = () => {
+export const LinksArea = () => {
   return <div>LinksArea</div>;
 };
-
-export default LinksArea;

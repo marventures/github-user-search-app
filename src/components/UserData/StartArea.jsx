@@ -1,7 +1,3 @@
-import React from 'react';
-
-const StartArea = () => {
+export const StartArea = () => {
   return <div>StartArea</div>;
 };
-
-export default StartArea;

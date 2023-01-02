@@ -1,7 +1,3 @@
-import React from 'react';
-
-const TopArea = () => {
+export const TopArea = () => {
   return <div>TopArea</div>;
 };
-
-export default TopArea;
