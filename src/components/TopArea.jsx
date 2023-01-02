@@ -42,7 +42,7 @@ export const TopArea = ({ setUser }) => {
       pfp: data.avatar_url,
       name: data.name,
       joinedAt: formatDate(data.created_at),
-      usename: data.login,
+      username: data.login,
       bio: data.bio,
       repos: data.public_repos,
       followers: data.followers,
