@@ -31,7 +31,7 @@ Users should be able to:
 
 ![githubusers(iPad)](https://user-images.githubusercontent.com/108392678/210203296-e44d57ed-bfc0-46c3-a438-40ad76eedcaa.png)
 ![githubusers1(iPad)](https://user-images.githubusercontent.com/108392678/210203302-8fe8c1ce-78e1-461b-90aa-e1cc139dc9c5.png)
-![githubusers2(iPad)](https://user-images.githubusercontent.com/108392678/210203306-1a605c6a-5bd7-4b8e-883f-53f9636fd734.png)
+![githubusers3(iPad)](https://user-images.githubusercontent.com/108392678/210204949-4ce91576-fb5a-42fc-a8e0-770d56d05f1c.png)
 
 
 ### Links
