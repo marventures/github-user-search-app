@@ -15,6 +15,12 @@ export const Index = ({ user }) => {
           joinedAt={user.joinedAt}
           pfp={user.pfp}
         />
+
+        <StartArea
+          repos={user.repos}
+          followers={user.followers}
+          following={user.following}
+        />
       </SideArea>
     </Container>
   );
