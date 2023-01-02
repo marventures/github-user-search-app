@@ -21,6 +21,8 @@ export const Index = ({ user }) => {
           followers={user.followers}
           following={user.following}
         />
+
+        <LinksArea links={user.links} />
       </SideArea>
     </Container>
   );
