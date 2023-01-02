@@ -66,7 +66,7 @@ Users should be able to:
 - [React  Docs (useContext)](https://beta.reactjs.org/apis/react/useContext#usecontext) - This helped me for creating a dark/light mode toggler.
 - [styled-components](https://styled-components.com/docs) - This helped me for all the necessary CSS styles.
 - [styled-components' ThemeProvider](https://styled-components.com/docs/api#themeprovider) - This helped me for injecting the theme into all styled components anywhere beneath it.
-- [stackoverflow (Formatting Dates) (https://stackoverflow.com/questions/1643320/get-month-name-from-date) - This helped me for formatting date from an ISO date format.
+- [stackoverflow(Formatting Dates)](https://stackoverflow.com/questions/1643320/get-month-name-from-date) - This helped me for formatting date from an ISO date format.
 
 ## Author
 
