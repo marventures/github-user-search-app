@@ -55,9 +55,12 @@ export const TopArea = ({ setUser }) => {
       },
     };
 
-    console.log(data);
     setUser(user);
   };
+
+  useEffect(() => {
+    fetchUser(inputUser);
+  }, [inputUser]);
 
   return (
     <Container>
