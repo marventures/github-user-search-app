@@ -58,7 +58,6 @@ const Data = styled.li`
 
   strong {
     font-weight: bold;
-    /* 1.8em on github */
     font-size: 1.8rem;
     line-height: 2.4rem;
     margin-top: 0.8rem;
