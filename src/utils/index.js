@@ -5,5 +5,5 @@ export const formatDate = date => {
   const month = objectDate.toLocaleString('default', { month: 'short' });
   const year = objectDate.getFullYear();
 
-  return `${day} ${month} ${year}`;
+  return `Joined ${day} ${month} ${year}`;
 };
