@@ -104,7 +104,8 @@ export const TopArea = ({ setUser }) => {
           type='search'
           placeholder='Search username ...'
         />
-
+        {empty && <Warn>Enter User</Warn>}
+        {notFound && <Warn>Not Found</Warn>}
         <SubmitBtn type='submit'>Search</SubmitBtn>
       </InputArea>
     </Container>
@@ -120,6 +121,14 @@ const ThemeArea = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+`;
+
+const Warn = styled.small`
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  color: #f74646;
+  margin-right: 2.4rem;
 `;
 
 const ChangeThemeBtn = styled.button`
