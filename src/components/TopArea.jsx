@@ -19,9 +19,10 @@ export const TopArea = ({ setUser }) => {
       return;
     }
 
-    setEmpty(false);
     fetchUser(searchField);
     setSearchField('');
+    setEmpty(false);
+    setNotFound(false);
   };
 
   const handleChange = e => {
