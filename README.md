@@ -33,7 +33,6 @@ Users should be able to:
 ![githubusers1(iPad)](https://user-images.githubusercontent.com/108392678/210203302-8fe8c1ce-78e1-461b-90aa-e1cc139dc9c5.png)
 ![githubusers3(iPad)](https://user-images.githubusercontent.com/108392678/210204949-4ce91576-fb5a-42fc-a8e0-770d56d05f1c.png)
 
-
 ### Links
 
 - Live Site URL: [Link](https://github-user-search-app-roan-alpha.vercel.app/)
@@ -53,17 +52,18 @@ Users should be able to:
 
 - Styling React App with styled-components
 - Creating a Form component in React
+- Creating a controlled component in React
 - Handling form submission
-- Managing state within a component using UseStateHook
-- Handling sideeffects using useEffect Hook
+- Managing state within a component using UseState Hook
+- Handling side-effects using useEffect Hook
+- Fetching GitHub Users API using async/await and Fetch API
 - Creating a light-dark theme switcher using ContextAPI and styled-components' ThemeProvider
 - Formatting date using Internationalization API
 
-
 ### Useful resources
 
-- [React  Docs (useEffect) ](https://beta.reactjs.org/apis/react/useEffect#useeffect) - This helped me for handling side-effects in React.
-- [React  Docs (useContext)](https://beta.reactjs.org/apis/react/useContext#usecontext) - This helped me for creating a dark/light mode toggler.
+- [React Docs (useEffect) ](https://beta.reactjs.org/apis/react/useEffect#useeffect) - This helped me for handling side-effects in React.
+- [React Docs (useContext)](https://beta.reactjs.org/apis/react/useContext#usecontext) - This helped me for creating a dark/light mode toggler.
 - [styled-components](https://styled-components.com/docs) - This helped me for all the necessary CSS styles.
 - [styled-components' ThemeProvider](https://styled-components.com/docs/api#themeprovider) - This helped me for injecting the theme into all styled components anywhere beneath it.
 - [stackoverflow(Formatting Dates)](https://stackoverflow.com/questions/1643320/get-month-name-from-date) - This helped me for formatting date from an ISO date format.
