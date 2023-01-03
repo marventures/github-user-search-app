@@ -1,29 +1,31 @@
-import { useContext, useEffect, useRef, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { ThemeContext } from '../contexts/ThemeContext';
 import { formatDate } from '../utils';
 
 export const TopArea = ({ setUser }) => {
   const { changeTheme, lightMode } = useContext(ThemeContext);
+  const [searchField, setSearchField] = useState('');
+  const [inputUser] = useState('octocat');
   const [empty, setEmpty] = useState(false);
   const [notFound, setNotFound] = useState(false);
-  const usernameRef = useRef(null);
-  const [inputUser] = useState('octocat');
 
   const handleSubmit = e => {
     e.preventDefault();
 
-    if (
-      usernameRef.current?.value.trim() === '' ||
-      usernameRef.current?.value === undefined
-    ) {
+    if (searchField === '') {
       setEmpty(true);
       setUser(null);
       return;
     }
 
     setEmpty(false);
-    fetchUser(usernameRef.current.value);
+    fetchUser(searchField);
+    setSearchField('');
+  };
+
+  const handleChange = e => {
+    setSearchField(e.target.value);
   };
 
   const fetchUser = async username => {
@@ -98,7 +100,8 @@ export const TopArea = ({ setUser }) => {
         </InputLabel>
 
         <Input
-          ref={usernameRef}
+          value={searchField}
+          onChange={handleChange}
           name='username'
           id='username'
           type='search'
